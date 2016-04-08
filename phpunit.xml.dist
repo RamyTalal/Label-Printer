@@ -15,7 +15,7 @@
          verbose="true"
 >
     <testsuites>
-        <testsuite name="Exporter Test Suite">
+        <testsuite name="Label-Printer Test Suite">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
