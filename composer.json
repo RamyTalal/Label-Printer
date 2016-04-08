@@ -1,0 +1,36 @@
+{
+    "name": "ramytalal/label-printer",
+    "description": "An implementation of the Brother label printer API.",
+    "keywords": [
+        "brother",
+        "label",
+        "label printer",
+        "printer"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/RamyTalal/Label-Printer",
+    "authors": [
+        {
+            "name": "Ramy Talal",
+            "email": "ramy@thinkquality.nl",
+            "homepage": "https://thinkquality.nl"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Talal\\LabelPrinter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Talal\\LabelPrinter\\": "src/tests/"
+        }
+    }
+}
