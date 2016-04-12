@@ -21,11 +21,11 @@ $ composer require RamyTalal/Label-Printer
 
 ## Usage
 
-### ESCP
+### ESC/P
 
 ``` php
 use Talal\LabelPrinter\Printer;
-use Talal\LabelPrinter\Mode\Template;
+use Talal\LabelPrinter\Mode\Escp;
 use Talal\LabelPrinter\Command;
 
 $stream = stream_socket_client('tcp://192.168.1.8:9100', $errorNumber, $errorString);
@@ -48,7 +48,7 @@ fclose($stream);
 
 ``` php
 use Talal\LabelPrinter\Printer;
-use Talal\LabelPrinter\Mode\Escp;
+use Talal\LabelPrinter\Mode\Template;
 use Talal\LabelPrinter\Command;
 
 $stream = stream_socket_client('tcp://192.168.1.8:9100', $errorNumber, $errorString);
