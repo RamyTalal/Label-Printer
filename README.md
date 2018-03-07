@@ -1,11 +1,12 @@
 # Label Printer
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/RamyTalal/Label-Printer.svg?style=flat-square)](https://packagist.org/packages/RamyTalal/Label-Printer)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Build Status](https://img.shields.io/travis/RamyTalal/Label-Printer/master.svg?style=flat-square)](https://travis-ci.org/RamyTalal/Label-Printer)
+[![Quality Score](https://img.shields.io/scrutinizer/g/RamyTalal/Label-Printer.svg?style=flat-square)](https://scrutinizer-ci.com/g/RamyTalal/Label-Printer)
+[![StyleCI](https://styleci.io/repos/55783562/shield?branch=master)](https://styleci.io/repos/55783562)
+[![Total Downloads](https://img.shields.io/packagist/dt/RamyTalal/Label-Printer.svg?style=flat-square)](https://packagist.org/packages/RamyTalal/Label-Printer)
+
 
 **This library is a WIP.**
 
@@ -16,7 +17,7 @@ Easily print labels with a Brother label printer. This library is tested with th
 ### Composer
 
 ``` bash
-$ composer require RamyTalal/Label-Printer
+composer require RamyTalal/Label-Printer
 ```
 
 ## Usage
@@ -67,7 +68,7 @@ fclose($stream);
 ## Testing
 
 ``` bash
-$ composer test
+composer test
 ```
 
 ## TODO
@@ -85,24 +86,9 @@ If you discover any security related issues, please email ramy@thinkquality.nl i
 
 ## Credits
 
-- [Ramy Talal][link-author]
-- [All Contributors][link-contributors]
+- [Ramy Talal](https://github.com/RamyTalal)
+- [All Contributors](../../contributors)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-[ico-version]: https://img.shields.io/packagist/v/RamyTalal/Label-Printer.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/RamyTalal/Label-Printer/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/RamyTalal/Label-Printer.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/RamyTalal/Label-Printer.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/RamyTalal/Label-Printer.svg?style=flat-square
-
-[link-packagist]: https://packagist.org/packages/RamyTalal/Label-Printer
-[link-travis]: https://travis-ci.org/RamyTalal/Label-Printer
-[link-scrutinizer]: https://scrutinizer-ci.com/g/RamyTalal/Label-Printer/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/RamyTalal/Label-Printer
-[link-downloads]: https://packagist.org/packages/RamyTalal/Label-Printer
-[link-author]: https://github.com/RamyTalal
-[link-contributors]: ../../contributors
