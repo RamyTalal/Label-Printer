@@ -54,10 +54,10 @@ use Talal\LabelPrinter\Command;
 $stream = stream_socket_client('tcp://192.168.1.8:9100', $errorNumber, $errorString);
 
 $printer = new Printer(new Template(2, $stream));
-$printer->addCommand(new Command\Object('title', 'R. Talal'));
-$printer->addCommand(new Command\Object('address', 'H.H. Schefferlaan 9'));
-$printer->addCommand(new Command\Object('postalcode', '7771 CW'));
-$printer->addCommand(new Command\Object('city', 'Hardenberg'));
+$printer->addCommand(new Command\ObjectCommand('title', 'R. Talal'));
+$printer->addCommand(new Command\ObjectCommand('address', 'H.H. Schefferlaan 9'));
+$printer->addCommand(new Command\ObjectCommand('postalcode', '7771 CW'));
+$printer->addCommand(new Command\ObjectCommand('city', 'Hardenberg'));
 
 $printer->printLabel();
 
