@@ -2,7 +2,7 @@
 
 namespace Talal\LabelPrinter\Command;
 
-class Object implements CommandInterface
+class ObjectCommand implements CommandInterface
 {
     /**
      * @var string
