@@ -9,7 +9,14 @@
 
 **This library is a WIP.**
 
-Easily print labels with a Brother label printer. This library is tested with the Brother QL-720NW, so it may not work with other printers.
+Easily print labels with a Brother label printer.
+
+This library is tested with the following Brother printers,
+
+* QL-720NW - tested by [RamyTalal](https://github.com/RamyTalal)
+* QL-810W - tested by [ntaylor-86](https://github.com/ntaylor-86)
+
+so it may not work with other printers.
 
 ## Install
 
