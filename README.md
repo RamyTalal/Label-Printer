@@ -15,6 +15,7 @@ This library is tested with the following Brother printers,
 
 * QL-720NW - tested by [RamyTalal](https://github.com/RamyTalal)
 * QL-810W - tested by [ntaylor-86](https://github.com/ntaylor-86)
+* QL-820NWB - Tested by by ArienClaij (https://github.com/arienclaij/) and Luc99 
 
 so it may not work with other printers.
 
