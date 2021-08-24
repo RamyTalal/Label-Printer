@@ -52,6 +52,16 @@ $printer->printLabel();
 fclose($stream);
 ```
 
+### AutoCut Feature
+
+```php
+// Disable the AutoCut on the printer
+$printer->addCommand(new Command\AutoCut(Command\AutoCut::DISABLED));
+
+// Enable the AutoCut on the printer
+$printer->addCommand(new Command\AutoCut(Command\AutoCut::ENABLED));
+```
+
 ### Template
 
 ``` php
