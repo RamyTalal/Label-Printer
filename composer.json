@@ -35,6 +35,7 @@
         }
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "phpunit",
+        "testdox": "phpunit --testdox"
     }
 }
