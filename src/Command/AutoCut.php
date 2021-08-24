@@ -2,7 +2,7 @@
 
 namespace Talal\LabelPrinter\Command;
 
-class EnableCut implements CommandInterface
+class AutoCut implements CommandInterface
 {
     /**
      * Brother ESC/P Command Reference
@@ -19,13 +19,31 @@ class EnableCut implements CommandInterface
      *     n = 0 or 48 ("0"): Cancels cutting.
      * 
      */
-
+    const ENABLED  = 49;
+    const DISABLED = 48;
+    
+    /**
+     * state
+     *
+     * @var int
+     */
+    protected $state;
+    
+    /**
+     * __construct
+     *
+     * @param  int $state
+     */
+    public function __construct($state)
+    {
+        $this->state = $state;
+    }
      
     /**
      * @inheritdoc
      */
     public function read()
     {
-        return chr(27) . 'iC' . chr(49);
+        return chr(27) . 'iC' . chr($this->state);
     }
 }
