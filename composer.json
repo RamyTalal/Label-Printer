@@ -33,5 +33,9 @@
         "psr-4": {
             "Talal\\LabelPrinter\\": "src/tests/"
         }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "testdox": "phpunit --testdox"
     }
 }
