@@ -29,6 +29,14 @@ abstract class Mode
     }
 
     /**
+     * Closes the connection resource.
+     */
+    public function closeResource()
+    {
+        fclose($this->resource);
+    }
+
+    /**
      * @param CommandInterface $command
      */
     public function addCommand(CommandInterface $command)
