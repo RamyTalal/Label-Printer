@@ -13,9 +13,10 @@ Easily print labels with a Brother label printer.
 
 This library is tested with the following Brother printers,
 
+* QL-580N - tested by [xelan](https://github.com/xelan)
 * QL-720NW - tested by [RamyTalal](https://github.com/RamyTalal)
 * QL-810W - tested by [ntaylor-86](https://github.com/ntaylor-86)
-* QL-820NWB - Tested by [ArienClaij](https://github.com/arienclaij/) and Luc99 
+* QL-820NWB - Tested by [ArienClaij](https://github.com/arienclaij/) and Luc99
 * QL-1110NWB - Tested by [JETomi](https://github.com/JETomi)
 
 so it may not work with other printers.
