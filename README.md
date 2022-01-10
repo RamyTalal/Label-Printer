@@ -13,9 +13,10 @@ Easily print labels with a Brother label printer.
 
 This library is tested with the following Brother printers,
 
+* QL-580N - tested by [xelan](https://github.com/xelan)
 * QL-720NW - tested by [RamyTalal](https://github.com/RamyTalal)
 * QL-810W - tested by [ntaylor-86](https://github.com/ntaylor-86)
-* QL-820NWB - Tested by [ArienClaij](https://github.com/arienclaij/) and Luc99 
+* QL-820NWB - Tested by [ArienClaij](https://github.com/arienclaij/) and Luc99
 * QL-1110NWB - Tested by [JETomi](https://github.com/JETomi)
 
 so it may not work with other printers.
@@ -83,6 +84,25 @@ $printer->printLabel();
 fclose($stream);
 ```
 
+### Barcode generation
+
+``` php
+use Talal\LabelPrinter\Printer;
+use Talal\LabelPrinter\Mode\Template;
+use Talal\LabelPrinter\Command;
+
+$stream = stream_socket_client('tcp://192.168.1.8:9100', $errorNumber, $errorString);
+
+$printer = new Printer(new Template(2, $stream));
+$printer->addCommand(new Command\Barcode('1234', 80, Command\Barcode::WIDTH_SMALL, 'code39', false, 2.5));
+
+// or QR code
+// $printer->addCommand(new Command\QrCode('https://example.com'));
+
+$printer->printLabel();
+fclose($stream);
+```
+
 ## Testing
 
 ``` bash
@@ -92,7 +112,6 @@ $ composer test
 ## TODO
 
 - [ ] Documentation
-- [ ] Generating QR Codes
 
 ## Contributing
 

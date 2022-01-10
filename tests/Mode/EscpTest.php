@@ -36,4 +36,12 @@ class EscpTest extends PHPUnit_Framework_TestCase
 
         $this->assertEquals('a-command', $command);
     }
+    
+    public function testCloseResource()
+    {
+        $tempStream = fopen('php://temp', 'rw');
+        $mode = new Mode\Escp($tempStream);
+        $mode->closeResource();
+        $this->assertSame(false, is_resource($tempStream));
+    }
 }
