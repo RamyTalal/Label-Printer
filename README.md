@@ -84,6 +84,25 @@ $printer->printLabel();
 fclose($stream);
 ```
 
+### Barcode generation
+
+``` php
+use Talal\LabelPrinter\Printer;
+use Talal\LabelPrinter\Mode\Template;
+use Talal\LabelPrinter\Command;
+
+$stream = stream_socket_client('tcp://192.168.1.8:9100', $errorNumber, $errorString);
+
+$printer = new Printer(new Template(2, $stream));
+$printer->addCommand(new Command\Barcode('1234', 80, Command\Barcode::WIDTH_SMALL, 'code39', false, 2.5));
+
+// or QR code
+// $printer->addCommand(new Command\QrCode('https://example.com'));
+
+$printer->printLabel();
+fclose($stream);
+```
+
 ## Testing
 
 ``` bash
@@ -93,7 +112,6 @@ $ composer test
 ## TODO
 
 - [ ] Documentation
-- [ ] Generating QR Codes
 
 ## Contributing
 
