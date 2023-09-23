@@ -1,4 +1,3 @@
-  GNU nano 4.8                                                                                     test/vendor/ramytalal/label-printer/src/Command/PrintOptions.php
 <?php
 
 namespace Talal\LabelPrinter\Command;
